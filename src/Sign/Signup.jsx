@@ -1,12 +1,13 @@
 import React, { useState } from 'react'
+import { Navigate, useNavigate } from 'react-router-dom'
 export default function Signup() {
   let [username, setusername]=useState()
   let [email,setemail]=useState()
   let[ password,setpassword]=useState()
-
+let navigate=useNavigate()
 
   let handleSignUp=()=>{
-     
+navigate('/Login')
     let data={
       username,email,password
     }

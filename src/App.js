@@ -13,7 +13,7 @@ export default function App() {
       <BrowserRouter>
       <Variable/>
       <Routes>
-      <Route path='/Dashboard/:name/:email/:role/:balance/:createdat' element={<Dashboard/>}/>
+      <Route path='/Dashboard/:name/:email' element={<Dashboard/>}/>
         <Route path='/' element={<Home/>}/>
         <Route path='/footer' element={<Footer/>}/>
         <Route path='/signup' element={<Signup/>}/>

@@ -15,7 +15,7 @@ export default function Login() {
     try {
       let mylog = await axios.post('http://localhost:5000/user/login', { email, password })
       console.log(mylog)
-      // navigate(`/Dashboard/${mylog.data.data.email}/${mylog.data.data.password}`)
+      navigate(`/Dashboard/${mylog?.data.data.username}/${mylog?.data.data.email}`)
     } catch (error) {
       seterrar(error.response.data.message)
     }
@@ -49,7 +49,7 @@ export default function Login() {
         <div className="sign-sub">
           <div className='Signup'>
             <h1>Login</h1>
-            <p style={{visibility: errar ? 'visible' :'hidden'}}>{errar}:</p>
+            <h3 style={{visibility: errar ? 'visible' :'hidden'}}>{errar}:</h3>
             <input type="email" name="" id="" placeholder='email' onChange={(e) => setemail(e.target.value)} />
             <input type="password" name="" id="" placeholder='password' onChange={(e) => setpassword(e.target.value)} />
             <button id='btn-sign' onClick={handleLoGin}>Login</button>

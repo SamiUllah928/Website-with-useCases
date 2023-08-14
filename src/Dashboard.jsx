@@ -8,9 +8,9 @@ export default function Dashboard() {
       
       <h1>Name: {params?.name}</h1>
       <h1>Email: {params?.email}</h1>
-      <h1>Role: {params?.role}</h1>
+      {/* <h1>Role: {params?.role}</h1>
       <h1>Balance: {params?.balance}</h1>
-      <h1>Createdat: {params?.createdat}</h1>
+      <h1>Createdat: {params?.createdat}</h1> */}
     </div>
   )
 }
