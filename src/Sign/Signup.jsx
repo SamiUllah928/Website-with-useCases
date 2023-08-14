@@ -14,7 +14,7 @@ export default function Signup() {
       method: 'POST',
       body: JSON.stringify(data),
       headers:{
-        "ContentType": "application/json"
+        "Content-Type": "application/json"
       }
     }
     fetch('http://localhost:5000/user/signup',option)
